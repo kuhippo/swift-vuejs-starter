@@ -29,7 +29,7 @@ var confData: [String:[[String:Any]]] = [
     "servers": [
         [
             "name":"localhost",
-            "port":8080,
+            "port":8888,
             "routes":[],
             "filters":[]
         ]
