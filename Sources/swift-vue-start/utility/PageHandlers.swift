@@ -26,7 +26,7 @@ import Stencil
 extension HTTPResponse {
     public func render(template: String, context: [String: Any] = [String: Any]()) {
         //设置路径
-        let fsLoader = FileSystemLoader(paths: ["webroot/views"])
+        let fsLoader = FileSystemLoader(paths: ["webroot/dist"])
         let environment = Environment(loader: fsLoader)
         
         do{

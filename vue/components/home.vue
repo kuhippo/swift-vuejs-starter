@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="ui big header">
-      <h1>Vue.js java starter.</h1>
+      <h1>Vue.js swift starter.</h1>
     </div>
     <div class="ui text container">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque porttitor ante, nec elementum

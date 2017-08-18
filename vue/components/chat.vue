@@ -4,10 +4,10 @@
     <h4>(open it in another browser window)</h4>
 
     <table style="width: 100%">
-      <tr v-for="m in messages">
+      <!-- <tr v-for=" m in messages">
         <td class="label label-pill label-default" width="20%">{{ m.author }}</td>
         <td class="label label-success" width="80%">{{ m.message }}</td>
-      </tr>
+      </tr> -->
     </table>
 
     <form>
@@ -34,29 +34,28 @@
         author: 'John',
         message: 'Vue.js works great with Java',
         messages: []
-      };
+      }
     },
     components: {},
     ready: function () {
-      var eventSource = new EventSource('/rest/chat/sse/updates');
-      var self = this;
+      var eventSource = new EventSource('/rest/chat/sse/updates')
+      var self = this
       eventSource.onmessage = function (e) {
-        var msg = JSON.parse(e.data);
-        console.log(e);
-        self.messages.push(msg);
-      };
-
+        var msg = JSON.parse(e.data)
+        console.log(e)
+        self.messages.push(msg)
+      }
     },
     methods: {
       postMessage: function () {
-        var self = this;
+        var self = this
         self.$http.post('/rest/chat/post', {
           author: self.author,
           message: self.message
         }).then(function () {
-          self.message = 'Send next message';
-        });
+          self.message = 'Send next message'
+        })
       }
     }
-  };
+  }
 </script>

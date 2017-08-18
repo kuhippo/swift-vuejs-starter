@@ -14,7 +14,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true">&times</span>
               </button>
               <h4 class="modal-title" id="exampleModalLabel">Change message</h4>
             </div>
@@ -46,11 +46,11 @@
       return {
         author: 'jon.doe@gmail.com',
         message: 'Vue.js (pronounced /vjuː/, like view) is a library for building interactive web interfaces. The goal of Vue.js is to provide the benefits of reactive data binding and composable view components with an API that is as simple as possible.'
-      };
+      }
     },
     components: {},
     ready: function () {
 
     }
-  };
+  }
 </script>

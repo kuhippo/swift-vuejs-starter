@@ -7,9 +7,9 @@
     </div>
     <div v-if="loaded">
       <ul>
-        <li v-for="s in settings">
+        <!-- <li v-for="s in settings">
           {{ s }}
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
