@@ -4,7 +4,6 @@ Vue.js swift-web starter
 ## Features:
 * Perfect
 * Vue.js
-* Hot module replacement (from webpack dev server and from java)
 * vue-router for routing (working well with spring router)
 * vue-resources for data fetching
 * development and production profiles
