@@ -33,6 +33,8 @@ func mainRoutes() -> [[String: Any]] {
     
     //api -restful
     routes.append(["method":"get", "uri":"/", "handler":MainPage.mainPage])
+    
+    routes.append(["method":"get", "uri":"/echo", "handler":Chat.test])
 	
 	return routes
 }
