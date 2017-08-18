@@ -15,15 +15,15 @@
     data () {
       return {
         posts: []
-      };
+      }
     },
     components: {},
     ready: function () {
-      let userPosts = this.$resource('/rest/user/{userId}/posts');
-      let userId = this.$route.params.userId;
+      let userPosts = this.$resource('/rest/user/{userId}/posts')
+      let userId = this.$route.params.userId
       userPosts.get({userId: userId}).then(function (response) {
-        this.$set('posts', response.data);
-      });
+        this.$set('posts', response.data)
+      })
     }
-  };
+  }
 </script>

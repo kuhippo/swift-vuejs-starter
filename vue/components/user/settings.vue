@@ -21,16 +21,16 @@
       return {
         loaded: false,
         settings: []
-      };
+      }
     },
     components: {},
     ready: function () {
-      let userSettings = this.$resource('/rest/user/{userId}/settings');
-      let userId = this.$route.params.userId;
+      let userSettings = this.$resource('/rest/user/{userId}/settings')
+      let userId = this.$route.params.userId
       userSettings.get({userId: userId}).then(function (response) {
-        this.$set('settings', response.data);
-        this.$data.loaded = true;
-      });
+        this.$set('settings', response.data)
+        this.$data.loaded = true
+      })
     }
-  };
+  }
 </script>
