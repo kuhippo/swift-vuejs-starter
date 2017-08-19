@@ -15,13 +15,27 @@ Vue.js swift-web starter
 * PostgreSql
 
 ### Installation Instructions
-* `git clone https://github.com/kuhippo/swift-vuejs-starter.git`
-* `cd swift-vuejs-starter`
-* `composer install`
-* `cp .env.example .env`
-* `php artisan key:generate`
+
+1.  `git clone https://github.com/kuhippo/swift-vuejs-starter.git`
+2. `cd swift-vuejs-starter`
+3. `make install`
+4. `make dev`
+5. `make servre`
 
 
 
-## Directory structure
+## Run in production mode
+
+``` bash
+1. make build
+2. set devOrpro = 1
+3. make servre
+```
+
+
+## Run in development mode
+
+``` bash
+1. make servre
+```
 
