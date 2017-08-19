@@ -18,7 +18,7 @@
       }
     },
     components: {},
-    ready: function () {
+    mounted: function () {
       let userPosts = this.$resource('/rest/user/{userId}/posts')
       let userId = this.$route.params.userId
       userPosts.get({userId: userId}).then(function (response) {

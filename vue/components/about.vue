@@ -44,12 +44,12 @@
     name: 'about',
     data () {
       return {
-        author: 'jon.doe@gmail.com',
+        author: 'rtys788@icloud.com',
         message: 'Vue.js (pronounced /vjuː/, like view) is a library for building interactive web interfaces. The goal of Vue.js is to provide the benefits of reactive data binding and composable view components with an API that is as simple as possible.'
       }
     },
     components: {},
-    ready: function () {
+    mounted: function () {
 
     }
   }

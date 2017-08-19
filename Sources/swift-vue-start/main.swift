@@ -28,13 +28,15 @@ config()
 var confData: [String:[[String:Any]]] = [
     "servers": [
         [
-            "name":"localhost",
-            "port":8888,
+            "name":"Chat",
+            "port":8181,
             "routes":[],
             "filters":[]
         ]
     ]
 ]
+//3.setp------设置开发环境或生产环境  0 为 开发 1 为生产
+let devOrpro = 0
 
 confData["servers"]?[0]["filters"] = filters()
 

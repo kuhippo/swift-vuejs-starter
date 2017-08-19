@@ -28,13 +28,18 @@ func mainRoutes() -> [[String: Any]] {
 
 	routes.append(["method":"get", "uri":"/**", "handler":PerfectHTTPServer.HTTPHandler.staticFiles,
 	               "documentRoot":"./webroot",
-	               "allowRequestFilter":false,
 	               "allowResponseFilters":true])
     
-    //api -restful
     routes.append(["method":"get", "uri":"/", "handler":MainPage.mainPage])
     
-    routes.append(["method":"get", "uri":"/echo", "handler":Chat.test])
-	
+    //api -restful
+    routes.append(["method":"get", "uri":"/rest/test", "handler":SampleRest.test])
+    routes.append(["method":"get", "uri":"/rest/user/{userId}/posts","handler":SampleRest.userposts])
+    routes.append(["method":"get", "uri":"/rest/user/{userId}/settings","handler":SampleRest.userSettings])
+    
+    
+    routes.append(["method":"get", "uri":"/chat", "handler":chatHandler])
+    routes.append(["method":"get", "uri":"/sse", "handler":MainPage.sse])
+    
 	return routes
 }

@@ -24,7 +24,7 @@
       }
     },
     components: {},
-    ready: function () {
+    mounted: function () {
       let userSettings = this.$resource('/rest/user/{userId}/settings')
       let userId = this.$route.params.userId
       userSettings.get({userId: userId}).then(function (response) {

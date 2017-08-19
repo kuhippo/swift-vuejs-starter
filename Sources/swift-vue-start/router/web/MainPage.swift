@@ -12,10 +12,21 @@ import PerfectHTTP
 
 class MainPage{
     
+    static func sse(data: [String:Any]) throws -> RequestHandler {
+        return{
+            req,res in
+            res.render(template: "sse/index")
+        }
+    }
+
     static func mainPage(data: [String:Any]) throws -> RequestHandler {
         return {
         req,res in
-            res.render(template: "index")
+            if devOrpro == 0 {
+                res.render(template: "index")
+            }else{
+                res.render(template: "index", isDev: 1)
+            }
         }
     }
 

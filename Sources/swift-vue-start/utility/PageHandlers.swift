@@ -24,9 +24,14 @@ import PerfectLib
 import Stencil
 
 extension HTTPResponse {
-    public func render(template: String, context: [String: Any] = [String: Any]()) {
+    public func render(template: String, context: [String: Any] = [String: Any](),isDev:Int = 0) {
         //设置路径
-        let fsLoader = FileSystemLoader(paths: ["webroot/dist"])
+        var fsLoader:FileSystemLoader!
+        if isDev == 1 {
+            fsLoader = FileSystemLoader(paths: ["webroot/dist"])
+        }else{
+            fsLoader = FileSystemLoader(paths: ["webroot/"])
+        }
         let environment = Environment(loader: fsLoader)
         
         do{

@@ -1,0 +1,158 @@
+/*
+Author: Ryan M. Collins
+Description: Perfect Chat
+Version: 1.0
+License: See license file
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, "Melno", "Meslo", Arial, sans-serif;
+	color: #f1f1f1;
+	width: 100vw; height: 100vh;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef9634+37,de4d31+100 */
+	background: #ef9634; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ef9634 37%, #de4d31 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #ef9634 37%,#de4d31 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #ef9634 37%,#de4d31 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef9634', endColorstr='#de4d31',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#main {
+	width: 100vw; height: 100vh;
+}
+
+#header {
+	margin: 0; padding: 20px;
+	width: 100%; height: 92px;
+	background: #20323F
+}
+
+.logo {
+	background: url('/img/logo@2x.png');
+	width: 164px; height: 52px;
+	background-size: 164px 52px;
+}
+
+#content {
+	
+}
+
+.chat-window {
+ 	height: 75vh;
+	margin-top: 10vh;
+	
+	background: #fff;
+	box-shadow: 2px 4px 16px rgba(48, 48, 48, 0.5);
+	
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	
+	overflow: hidden;
+    
+    transform: scale(0.01);
+}
+
+.messages {
+	width: 100%; height: 90%;
+	margin: 0; padding: 20px;
+	
+	color: #666;
+	font-weight: 200;
+	
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.sendbar {
+	width: 96%;
+	margin: 0 15px;
+	padding: 16px 12px 8px 12px;
+	
+	position: absolute;
+	bottom: 0; left: 0;
+	
+	color: #858585;
+	font-weight: 100;
+}
+
+.sendbar form {
+	min-width: 100%;
+}
+
+.sendbar input {
+	width: 60%;
+	border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.sendbar .btn-submit {
+	margin: 0; padding: 4px 24px;
+	position: absolute; right: 28px;
+	
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	
+	background: #3194E1;
+	color: #fff;
+	font-size: 10px;
+	font-weight: normal;
+	box-shadow: none;
+	border: none;
+}
+
+.sendbar .btn-submit:hover {
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+.message {
+	clear: both;
+	margin-bottom: 20px;
+	max-width: 80%;
+    word-wrap: break-word;
+}
+
+.avatar {
+	float: left;
+	height: 50px; width: 50px;
+	margin: 0 10px 20px 0;
+	
+	border: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.message.self, .self img.avatar {
+	float: right;
+	margin-left: 10px;
+}
+
+.message span {
+	position: relative; top: 14px;
+}
+
+@media (min-width: 350px) {
+	.messages {
+		height: 92%;
+	}
+}
+
+@media (min-width: 768px) {
+	
+	.sendbar {
+		width: 98%;
+		padding: 16px 12px;
+	}
+	
+	.sendbar input {
+		width: 80%;
+	}
+}

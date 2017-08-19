@@ -1,2 +1,0 @@
-webpackJsonp([2],{37:function(e,r,s){var t=s(7)(s(57),s(49),null,null,null);e.exports=t.exports},49:function(e,r){e.exports={render:function(){var e=this,r=e.$createElement,s=e._self._c||r;return s("div",{staticClass:"user-profile"},[s("h2",[e._v("user profile")]),e._v(" "),s("p",[e._v(e._s(e.$route.params.userId)+" "+e._s(e.$route.params.something))])])},staticRenderFns:[]}},57:function(e,r,s){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r.default={name:"user-profile"}}});
-//# sourceMappingURL=2.24a5c5bd7c04810d129e.js.map
