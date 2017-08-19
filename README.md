@@ -2,17 +2,26 @@
 Vue.js swift-web starter 
 
 ## Features:
-* Perfect
-* Vue.js
-* vue-router for routing (working well with spring router)
+* Base Perfect
+* Vue2.js
+* VueJS router history mode 
 * vue-resources for data fetching
-* development and production profiles
-* fully automated maven workflow
-* bootstrap 4 integration
-* font-awesome
-* less-css support
-* sass support
-* and will be more...
+* Development and production setting
+* Fully automated maven workflow
+* Bootstrap 4
+* Font-awesome
+* SwiftWeb Socket
+* MakeFile
+* PostgreSql
+
+### Installation Instructions
+* `git clone https://github.com/kuhippo/swift-vuejs-starter.git`
+* `cd swift-vuejs-starter`
+* `composer install`
+* `cp .env.example .env`
+* `php artisan key:generate`
+
+
 
 ## Directory structure
 
