@@ -84,3 +84,6 @@ Vue.js swift-web starter
 
 ```
 
+## LICENSE
+MIT
+
