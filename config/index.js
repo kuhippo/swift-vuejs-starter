@@ -30,8 +30,5 @@ module.exports = {
     proxyTable: {},
     cssSourceMap: false,
     contentBase: 'webroot/static',
-    proxy: {
-      '/rest/*': 'http://localhost:8080'
-    }
   }
 }
