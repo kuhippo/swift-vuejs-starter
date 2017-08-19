@@ -39,3 +39,48 @@ Vue.js swift-web starter
 1. make servre
 ```
 
+
+##tree
+```
+
+.
+├── LICENSE
+├── Makefile
+├── Package.pins
+├── Package.swift
+├── README.md
+├── Sources
+│   └── swift-vue-start
+├── build
+├── config
+│   ├── dev.env.js
+│   ├── index.js
+│   ├── prod.env.js
+│   └── test.env.js
+├── dist
+│   └── index.html
+├── index.html
+├── package.json
+├── static
+├── swiftStartKit.xcodeproj
+├── test
+│   ├── e2e
+│   └── unit
+├── vue
+│   ├── App.vue
+│   ├── assets
+│   ├── components
+│   ├── main.js
+│   ├── router
+│   └── store
+├── webroot
+│   ├── assets
+│   ├── css
+│   ├── dist
+│   ├── fonts
+│   ├── images
+│   └── index.html
+└── yarn-error.log
+
+```
+
