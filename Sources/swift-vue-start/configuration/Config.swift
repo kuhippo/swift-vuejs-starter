@@ -26,7 +26,6 @@ func config(){
     
     //添加测试数据
     let userres = p.exec(statement: "CREATE TABLE users ( id serial PRIMARY KEY, username varchar(20) NOT NULL, age integer)")
-    
     let topicres = p.exec(statement: "CREATE TABLE topics ( id serial PRIMARY KEY, user_id integer ,title varchar(20) NULL, content varchar(20))")
     
     
